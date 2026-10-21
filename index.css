@@ -41,6 +41,11 @@ thead
     background-color: lightgrey;
 }
 
+form
+{
+    display: none;
+}
+
 fieldset
 {
     border-radius: 5px;
@@ -54,6 +59,16 @@ fieldset
 
 }
 
+.cancel
+{
+   grid-column: span 2;
+   justify-self: center;
+   border-radius: 20px;
+   border: solid rgb(239, 182, 182);
+   background-color: rgb(254, 186, 186);
+   
+}
+
 .submit
 {   
     border: 1px solid gray;
@@ -63,4 +78,37 @@ fieldset
     background-color:   lightgreen;
 
     letter-spacing: .5px;
+}
+
+.addBook
+{
+    
+    display: inline-flex;
+    align-items: center;
+    text-align: center;
+    gap: 4px;
+    white-space: nowrap;
+    padding: 10px;
+    border-radius: 30px;
+    background-color: rgb(215, 247, 236);
+    border:2px solid rgb(112, 238, 131);
+    letter-spacing: 1.5px;
+
+}
+
+.addicon
+{
+    width: 20px;
+    height: 20px;
+    fill: green;
+}
+
+form.show
+{
+    display: block;
+}
+
+.addBook.hide
+{
+    display: none;
 }

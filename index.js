@@ -1,6 +1,19 @@
 
 const table = document.querySelector("tbody");
 const form = document.querySelector("form");
+const login= document.querySelector(".addBook");
+const cancel = document.querySelector(".cancel");
+
+login.addEventListener("click", () => {
+    form.classList.toggle("show");
+    login.classList.toggle("hide");
+
+})
+
+cancel.addEventListener("click", () => {
+    form.classList.toggle("show");
+    login.classList.toggle("hide");
+})
 
 
 
@@ -64,6 +77,8 @@ form.addEventListener("submit", (e) => {
     actioncell.innerHTML = '<button class="action">Remove</button>';
 
     form.reset();
+    form.classList.toggle("show");
+    login.classList.toggle("hide");
 })
 
 
