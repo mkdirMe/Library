@@ -8,6 +8,13 @@ table.addEventListener("click", (e) => {
     if (e.target.classList.contains("action"))
     {
         (e.target.closest("tr")).remove();
+        Book.count--;
+
+        for(let i = 0; i < Book.count; i++)
+        {
+            table.rows[i].cells[0].textContent = i + 1;
+
+        }
     }
 })
 
